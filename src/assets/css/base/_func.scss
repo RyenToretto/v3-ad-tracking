@@ -1,0 +1,14 @@
+/**
+ * Func
+*/
+
+@use 'sass:math';
+
+$vw_fontsize: 100;
+@function rem($px) {
+  @return math.div($px, $vw_fontsize) * 1rem;
+}
+
+@function vw($px) {
+  @return math.div($px * 100vw, 750);
+}

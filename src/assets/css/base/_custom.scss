@@ -1,0 +1,38 @@
+@keyframes octocat-wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-25deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  80% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+a {
+  &.none-decoration {
+    text-decoration: none;
+  }
+  &.green {
+    color: hsla(160, 100%, 37%, 1);
+    transition: color 0.4s linear;
+    &:hover {
+      background-color: hsla(160, 100%, 37%, 0.2);
+    }
+  }
+}
